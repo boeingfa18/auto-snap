@@ -1,0 +1,7 @@
+[Unit]
+Description=Send black snaps to keep Snapchat streaks alive
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/auto-snap
+ExecStart=/opt/auto-snap/venv/bin/python /opt/auto-snap/autosnap.py run
